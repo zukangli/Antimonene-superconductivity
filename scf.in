@@ -1,0 +1,24 @@
+&control
+   calculation = 'scf',
+   prefix='cm',
+   pseudo_dir ='/public/home/zkli/work/Tc/UPF_Tc'
+   outdir='./scratch',
+/
+&SYSTEM
+    ibrav = 0,nat = 5,ntyp = 2,
+    occupations='smearing', smearing='mv', degauss=0.02,
+    ecutwfc=80.0, 
+    input_dft='vdw-df-obk8',
+    assume_isolated='2D',
+/
+&electrons
+   diagonalization = 'david'
+   mixing_mode = 'plain'
+   mixing_beta = 0.7,
+   conv_thr =  1.0d-10,
+/
+ATOMIC_SPECIES
+CELL_PARAMETERS {angstrom}
+ATOMIC_POSITIONS (crystal)
+K_POINTS {automatic}
+18 18 1 0 0 0

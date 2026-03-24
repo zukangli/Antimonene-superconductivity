@@ -1,0 +1,13 @@
+#epc
+&inputph
+tr2_ph=1.0d-14,
+prefix='cm',
+fildvscf='epcdv',
+outdir='./scratch',
+fildyn='epc',
+electron_phonon='interpolated',
+el_ph_sigma=0.005, el_ph_nsigma=10,
+alpha_mix(1)=0.1,
+trans=.true., ldisp=.true.
+nq1=6, nq2=6, nq3=1
+/
