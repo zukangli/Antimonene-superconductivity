@@ -7,10 +7,10 @@ This repository contains the data and computational input files for the manuscri
 ## Contents
 
 - structures/
-  Structural models (VASP POSCAR format)
+   Pristine bilayer antimonene structures (VASP POSCAR format), serving as initial configurations before metal intercalation
 
 - QE_inputs/
-  Quantum ESPRESSO input files (scf, relax, elph)
+  Quantum ESPRESSO input files (relax, scf, scf.a2f, elph)
 
 ## Notes
 
